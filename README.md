@@ -9,7 +9,7 @@
 通过 Composer 安装：
 
 ```bash
-composer require fanxd/owl-knowledge
+composer require fanxd/owl-knowledge:^1.0
 ```
 
 如果是开发中本地调试，可以在 `extensions` 目录下直接做 symlink 或本地引用。
