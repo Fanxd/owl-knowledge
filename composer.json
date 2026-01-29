@@ -1,0 +1,33 @@
+{
+    "name": "fanxd/owl-knowledge",
+    "alias": "",
+    "description": "Owl Admin 扩展，用于管理知识库、分类以及 AI 驱动的知识场景，支持多租户和可见性控制",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": ["owl-admin", "extension"],
+    "homepage": "https://github.com/fanxd/owl-knowledge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leon",
+            "email": "897645119@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "slowlyo/owl-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fanxd\\OwlKnowledge\\": "src/"
+        }
+    },
+    "extra": {
+        "owl-admin": "Fanxd\\OwlKnowledge\\OwlKnowledgeServiceProvider",
+        "laravel": {
+            "providers": [
+                "Fanxd\\OwlKnowledge\\OwlKnowledgeServiceProvider"
+            ]
+        }
+    }
+}
